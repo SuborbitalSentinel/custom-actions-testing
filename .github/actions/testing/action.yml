@@ -2,8 +2,8 @@ name: 'Test Action'
 description: 'testing having a private action and using it in workflows'
 inputs:
   github_token:
-  description: 'token to give to octokit'
-  required: true
+    description: 'token to give to octokit'
+    required: true
 runs:
   using: 'node22'
   main: 'dist/index.js'
