@@ -9,6 +9,6 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v4
 
-      # - uses: .github/actions/testing/
-      #   with:
-      #     github_token: 'MyFancyTestToken'
+      - uses: ./.github/actions/testing/
+        with:
+          github_token: 'MyFancyTestToken'
