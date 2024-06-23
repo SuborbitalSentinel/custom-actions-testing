@@ -26851,27 +26851,12 @@ __nccwpck_require__.r(__webpack_exports__);
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(1601);
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__nccwpck_require__.n(_actions_core__WEBPACK_IMPORTED_MODULE_0__);
 
-// import * as github from "@actions/github";
 
 try {
 	const github_token = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("github_token");
 	console.log(`Before Secret: ${github_token}`);
 	_actions_core__WEBPACK_IMPORTED_MODULE_0__.setSecret("github_token");
 	console.log(`After Secret: ${github_token}`);
-
-	// const octokit = github.getOctokit(github_token);
-	//
-	// const {
-	// 	data: { workflow_runs },
-	// } = await octokit.rest.actions.listWorkflowRuns({
-	// 	owner: "suborbitalsentinel",
-	// 	repo: "my-action-test",
-	// 	workflow_id: "master.yml",
-	// 	status: "success",
-	// 	event: "push",
-	// 	per_page: 1,
-	// });
-	// workflow_runs[0].head_sha;
 } catch (error) {
 	_actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);
 }
