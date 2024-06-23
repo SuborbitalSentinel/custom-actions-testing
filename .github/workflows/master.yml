@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: .github/actions/testing/
+      - uses: '.github/actions/testing/'
         with:
           github_token: 'MyFancyTestToken'
