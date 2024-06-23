@@ -1,0 +1,13 @@
+name: Master workflow
+run-name: ${{ github.actor }} is testing out GitHub Actions
+on: [push]
+
+jobs:
+  Invoke-Custom-Action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: .github/actions/testing/
+        with:
+          github_token: 'MyFancyTestToken'
